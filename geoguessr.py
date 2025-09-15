@@ -49,6 +49,7 @@ class GeoGuessrGame(Game):
         objective_list = [
             GameObjectiveTemplate(
                 label="Play the daily Challenge",
+                data={},
                 is_time_consuming=False,
                 is_difficult=False,
                 weight=1,
