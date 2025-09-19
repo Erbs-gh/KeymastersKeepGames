@@ -56,7 +56,7 @@ class GeoGuessrGame(Game):
             ),
         ]
 
-        if self.bronzemaps:
+        if self.bronzemaps():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Get a bronze medal (5k total points) on the MAP map.",
@@ -78,7 +78,7 @@ class GeoGuessrGame(Game):
                 ),
             ]
 
-        if self.silvermaps:
+        if self.silvermaps():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Get a silver medal (15k total points) on the MAP map.",
@@ -100,7 +100,7 @@ class GeoGuessrGame(Game):
                 ),
             ]
 
-        if self.goldmaps:
+        if self.goldmaps():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Get a gold medal (22.5k total points) on the MAP map.",
@@ -122,7 +122,7 @@ class GeoGuessrGame(Game):
                 ),
             ]
 
-        if self.platinummaps:
+        if self.platinummaps():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Get a platinum medal (25k total points) on the MAP map.",
@@ -144,7 +144,7 @@ class GeoGuessrGame(Game):
                 ),
             ]
 
-        if self.soloduels:
+        if self.soloduels():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Play AMOUNT games in solo ranked duels.",
@@ -166,7 +166,7 @@ class GeoGuessrGame(Game):
                 ),
             ]
 
-        if self.teamduels:
+        if self.teamduels():
             objective_list += [
                 GameObjectiveTemplate(
                     label="Play AMOUNT games in ranked teamduels.",
